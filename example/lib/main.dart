@@ -40,31 +40,35 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         child: CommentTreeWidget<Comment, Comment>(
           Comment(
+              commentId: 'null',
               avatar: 'null',
               userName: 'null',
               content: 'felangel made felangel/cubit_and_beyond public '),
           [
             Comment(
+                commentId: 'null',
                 avatar: 'null',
                 userName: 'null',
                 content: 'A Dart template generator which helps teams'),
             Comment(
+                commentId: 'null',
                 avatar: 'null',
                 userName: 'null',
                 content:
                     'A Dart template generator which helps teams generator which helps teams generator which helps teams'),
             Comment(
+                commentId: 'null',
                 avatar: 'null',
                 userName: 'null',
                 content: 'A Dart template generator which helps teams'),
             Comment(
+                commentId: 'null',
                 avatar: 'null',
                 userName: 'null',
                 content:
                     'A Dart template generator which helps teams generator which helps teams '),
           ],
-          treeThemeData:
-              TreeThemeData(lineColor: Colors.green[500]!, lineWidth: 3),
+          treeThemeData: TreeThemeData(lineColor: Colors.green[500]!, lineWidth: 3),
           avatarRoot: (context, data) => PreferredSize(
             child: CircleAvatar(
               radius: 18,
@@ -88,30 +92,35 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                   decoration: BoxDecoration(
-                      color: Colors.grey[100],
-                      borderRadius: BorderRadius.circular(12)),
+                      color: Colors.grey[100], borderRadius: BorderRadius.circular(12)),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         'dangngocduc',
-                        style: Theme.of(context).textTheme.caption?.copyWith(
-                            fontWeight: FontWeight.w600, color: Colors.black),
+                        style: Theme.of(context)
+                            .textTheme
+                            .caption
+                            ?.copyWith(fontWeight: FontWeight.w600, color: Colors.black),
                       ),
                       SizedBox(
                         height: 4,
                       ),
                       Text(
                         '${data.content}',
-                        style: Theme.of(context).textTheme.caption?.copyWith(
-                            fontWeight: FontWeight.w300, color: Colors.black),
+                        style: Theme.of(context)
+                            .textTheme
+                            .caption
+                            ?.copyWith(fontWeight: FontWeight.w300, color: Colors.black),
                       ),
                     ],
                   ),
                 ),
                 DefaultTextStyle(
-                  style: Theme.of(context).textTheme.caption!.copyWith(
-                      color: Colors.grey[700], fontWeight: FontWeight.bold),
+                  style: Theme.of(context)
+                      .textTheme
+                      .caption!
+                      .copyWith(color: Colors.grey[700], fontWeight: FontWeight.bold),
                   child: Padding(
                     padding: EdgeInsets.only(top: 4),
                     child: Row(
@@ -138,30 +147,35 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                   decoration: BoxDecoration(
-                      color: Colors.grey[100],
-                      borderRadius: BorderRadius.circular(12)),
+                      color: Colors.grey[100], borderRadius: BorderRadius.circular(12)),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         'dangngocduc',
-                        style: Theme.of(context).textTheme.caption!.copyWith(
-                            fontWeight: FontWeight.w600, color: Colors.black),
+                        style: Theme.of(context)
+                            .textTheme
+                            .caption!
+                            .copyWith(fontWeight: FontWeight.w600, color: Colors.black),
                       ),
                       SizedBox(
                         height: 4,
                       ),
                       Text(
                         '${data.content}',
-                        style: Theme.of(context).textTheme.caption!.copyWith(
-                            fontWeight: FontWeight.w300, color: Colors.black),
+                        style: Theme.of(context)
+                            .textTheme
+                            .caption!
+                            .copyWith(fontWeight: FontWeight.w300, color: Colors.black),
                       ),
                     ],
                   ),
                 ),
                 DefaultTextStyle(
-                  style: Theme.of(context).textTheme.caption!.copyWith(
-                      color: Colors.grey[700], fontWeight: FontWeight.bold),
+                  style: Theme.of(context)
+                      .textTheme
+                      .caption!
+                      .copyWith(color: Colors.grey[700], fontWeight: FontWeight.bold),
                   child: Padding(
                     padding: EdgeInsets.only(top: 4),
                     child: Row(
